@@ -10,7 +10,7 @@ const app = express();
 const port = 3000;
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://kart-rag-chat-bot.netlify.app',
   methods: ['GET', 'POST', 'DELETE'],
   credentials: true
 }));
