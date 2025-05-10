@@ -95,7 +95,7 @@ app.post('/query', async (req, res) => {
 
     } catch (error) {
         console.error('Error:', error.response?.data || error.message);
-        res.status(500).json({ error: 'Failed to query or generate answer' });
+        res.status(500).json({ error: 'Failed to query or generate answer', error });
     }
 });
 
